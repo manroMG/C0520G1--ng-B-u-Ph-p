@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sở thích của bạn</title>
+    <style>
+        .red{
+            color:red ;
+        }
+    </style>
+
+</head>
+<body>
+
+<form action="/action_page.php">
+    <h1>SỞ THÍCH CỦA BẠN</h1>
+    Họ và tên:
+    <input name="Họ và tên" type="text" size="50"/>
+   <br>
+    Email:
+    <input type = "text" name="email" size="35"/>
+    <br>
+    Sở thích:
+    <div class="red">
+        <label><input name="hobby" value="Thể thao" type="checkbox"/> Thể thao</label>
+        <label><input name="hobby" value="Âm nhạc" type="checkbox"/> Âm nhạc</label>
+        <label><input name="hobby" value="Đọc sách" type="checkbox"/> Đọc sách</label> <br/>
+        <label><input name="hobby" value="Lướt web" type="checkbox"/> Lướt web</label>
+        <label><input name="hobby" value="Chơi game" type="checkbox"/> Chơi game</label>
+        <label><input name="hobby" value="Điện ảnh" type="checkbox"/> Điện ảnh</label> <br/>
+        <label><input name="hobby" value="Du lịch" type="checkbox"/> Du lịch</label><br>
+    </div>
+
+    <input type="submit" value="Gửi thông tin"/>
+    <input type="reset" value="Nhập lại"/>
+</form>
+</body>
+</html>

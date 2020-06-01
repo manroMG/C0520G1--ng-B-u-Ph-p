@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey khách hàng</title>
+</head>
+<body>
+<form>
+    <h3>Market Research Survey</h3>
+    <p>Please take a few moments to complete this satisfaction survey.
+    </p>
+    <hr>
+    <strong>What is your age range?</strong><br>
+    <select name="old" style="width: 400px">
+        <option>18-24</option>
+        <option>25-34</option>
+        <option>35-50</option>
+        <option>50+</option>
+    </select><br>
+    <strong>What is your yearly income range?</strong><br>
+    <select name="money" style="width: 400px">
+        <option>$0-$25,000</option>
+        <option>$25,001-$50,000</option>
+        <option>$50,001-$100,000</option>
+        <option>100,000+</option>
+    </select><br><hr>
+   <strong>Gender Identity</strong> <br>
+    <label><input name="gender" value="male" type="radio" checked/> Male</label><br>
+    <label><input name="gender" value="female" type="radio" checked/> Female</label> <br/>
+    <label><input name="gender" value="female" type="radio" checked/> Nonbinary</label> <br/>
+    <label><input name="gender" value="female" type="radio" checked/> Other</label> <br/>
+    <strong>Which of the following products have your purchased in the last 2 months. Please check all that apply.</strong><br/>
+    <label><input name="product" value="Product 1" type="checkbox"/> Product 1</label> <br/>
+    <label><input name="product" value="Product 2" type="checkbox"/> Product 2</label> <br/>
+    <label><input name="product" value="Product 3" type="checkbox"/> Product 3</label> <br/>
+    <strong>How often would you use our new product?</strong><br>
+    <label><input name="time" value="Daily" type="radio" checked/> Daily</label><br>
+    <label><input name="time" value="Weekly" type="radio" checked/> Weekly</label><br>
+    <label><input name="time" value="Monthly" type="radio" checked/> Monthly</label><br>
+    <strong>What would you pay for the new product?</strong><br>
+    $
+    <input type="text" name="Dollar" placeholder="Dollar" size="10">
+    .
+    <input type="text" name="Cents" placeholder="Cents" size="2"><br> <hr>
+    <strong>What features would you like to see in the new product.</strong><br>
+    <textarea cols="150" rows="7"></textarea>
+    <p>Please rate your level of agreement with the following statements.</p>
+    <table border="1">
+        <tr>
+            <th></th>
+            <th>Strongly Disagree	</th>
+            <th>Disagree</th>
+            <th>Agree</th>
+            <th>Strongly Agree</th>
+        </tr>
+        <tr>
+            <td><strong>Our products are priced fairly.	</strong></td>
+            <td><label><input name="priced" value="Strongly Disagree	" type="radio" checked/></label></td>
+            <td><label><input name="priced" value="Disagree" type="radio" checked/></label></td>
+            <td><label><input name="priced" value="Agree" type="radio" checked/> </label></td>
+            <td> <label><input name="priced" value="Strongly Agree" type="radio" checked/>  </label></td>
+        </tr>
+        <tr>
+
+            <td><strong>Our products are high quality.	</strong></td>
+            <td><label><input name="quality" value="Strongly Disagree	" type="radio" checked/> </label></td>
+            <td><label><input name="quality" value="Disagree" type="radio" checked/> </label></td>
+            <td> <label><input name="quality" value="Agree" type="radio" checked/> </label></td>
+            <td><label><input name="quality" value="Strongly Agree" type="radio" checked/>  </label></td>
+        </tr>
+        <tr>
+            <td><strong>You would recommend our product to a friend or coworker.</strong></td>
+            <td> <label><input name="recommend" value="Strongly Disagree	" type="radio" checked/>  	</label></td>
+            <td><label><input name="recommend" value="Disagree" type="radio" checked/> </label></td>
+            <td><label><input name="recommend" value="Agree" type="radio" checked/> </label></td>
+            <td> <label><input name="recommend" value="Strongly Agree" type="radio" checked/>  </label></td>
+        </tr>
+    </table>
+    <input type="submit" value="Submit"
+</form>
+</body>
+</html>
