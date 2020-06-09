@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vong_lap_long_nhau</title>
+</head>
+<body>
+<script>
+    let sout,i,j;
+    sout1="<table border='0' width='100' cellspacing='10' cellpadding='0'>";
+    i=j=1;
+    while (i<=5){
+        sout1=sout1 +"<tr>";
+        while (j<=i){
+            sout1=sout1+"<td>" + "*"+"</td>";
+            j++;
+        }
+        sout1=sout1+"</tr>";
+        j=1;
+        i++;
+    }
+    sout1=sout1 + "</table>";
+    document.write(sout1+"<br> <br> <br>");
+
+
+    sout2="<table border='0' width='100' cellspacing='10' cellpadding='0'>";
+    i=j=1;
+    while (i<=5){
+        sout2=sout2 +"<tr>";
+        while (j<=(6-i)){
+            sout2=sout2+"<td>" + "*"+"</td>";
+            j++;
+        }
+        sout2=sout2+"</tr>";
+        j=1;
+        i++;
+    }
+    sout2=sout2 + "</table>";
+    document.write(sout2+"<br> <br> <br>");
+
+
+    sout3="<table border='0' width='100' cellspacing='10' cellpadding='0'>";
+    i=j=1;
+    while (i<=5){
+        sout3=sout3 +"<tr>";
+        while (j<=5){
+            if (i*j<=6 && i*j!=5){
+                sout3=sout3+"<td>"+"&nbsp"+"</td>";
+            }
+            else{
+            sout3=sout3+"<td>" + "*"+"</td>";
+
+            }
+            j++;
+        }
+        sout3=sout3+"</tr>";
+        j=1;
+        i++;
+    }
+    sout3=sout3 + "</table>";
+    document.write(sout3+"<br> <br> <br>");
+
+
+    sout3="<table border='0' width='100' cellspacing='10' cellpadding='0'>";
+    i=j=1;
+    while (i<=5){
+        sout3=sout3 +"<tr>";
+        while (j<=5){
+            if (i>j){
+                sout3=sout3+"<td>"+"&nbsp"+"</td>";
+            }
+            else{
+                sout3=sout3+"<td>" + "*"+"</td>";
+
+            }
+            j++;
+        }
+        sout3=sout3+"</tr>";
+        j=1;
+        i++;
+    }
+    sout3=sout3 + "</table>";
+    document.write(sout3+"<br> <br> <br>");
+
+
+</script>
+</body>
+</html>

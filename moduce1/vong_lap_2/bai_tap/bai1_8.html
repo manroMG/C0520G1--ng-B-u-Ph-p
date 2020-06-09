@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <input type="button" onclick="doan()" value="Chơi"/>
+</form>
+<script>
+    function doan(){
+        let min=parseInt(prompt("bạn muốn đoán trong khoảng từ"));
+        let max=parseInt(prompt("đến"));
+    let SoNgaunhien=Math.ceil(Math.random()* (max - min)) + min;
+    let i=1
+        while (i<=3) {
+            let SoDoan = parseInt(prompt("Nhập số bạn đoán:"));
+            if (SoDoan == SoNgaunhien) {
+                alert("Chúc mừng bạn đoán trúng!");
+                break;
+            } else if (SoDoan > SoNgaunhien) {
+                alert("Số đoán lớn hơn");
+            } else {
+                alert("Số đoán nhỏ hơn");
+            }
+            i++
+        }
+        alert("hết lượt đoán");
+    }
+</script>
+</body>
+</html>
